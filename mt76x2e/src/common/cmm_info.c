@@ -8381,6 +8381,7 @@ void DisplayTxAgg (RTMP_ADAPTER *pAd)
 }
 #endif /* DOT11_N_SUPPORT */
 
+#ifdef RT6352
 static INT set_rtmp_rf(RTMP_ADAPTER *pAd, PSTRING arg)
 {
 	INT bank_id = 0, rf_id = 0, rv = 0, rf_v;
@@ -8407,6 +8408,7 @@ static INT set_rtmp_rf(RTMP_ADAPTER *pAd, PSTRING arg)
 
 	return TRUE;
 }
+#endif
 
 #ifdef RLT_RF
 static INT set_rlt_rf(RTMP_ADAPTER *pAd, PSTRING arg)
