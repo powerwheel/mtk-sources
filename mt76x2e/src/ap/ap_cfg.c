@@ -7363,7 +7363,7 @@ INT Set_AutoChannelSelCheckTime_Proc(
 
 INT Show_DriverInfo_Proc(RTMP_ADAPTER *pAd, PSTRING arg)
 {
-	DBGPRINT(RT_DEBUG_OFF, ("driver version: %s (%s %s) .\n", AP_DRIVER_VERSION, __DATE__, __TIME__));
+	DBGPRINT(RT_DEBUG_OFF, ("driver version: %s .\n", AP_DRIVER_VERSION));
 
 #ifdef CONFIG_ANDES_SUPPORT
 	if (pAd->chipCap.MCUType == ANDES) { 
@@ -9833,7 +9833,7 @@ VOID RTMPIoctlStatistics(RTMP_ADAPTER *pAd, RTMP_IOCTL_INPUT_STRUCT *wrq)
 		rxCount = pAd->WlanCounters.ReceivedFragmentCount.QuadPart;
 	}
 
-	sprintf(msg+strlen(msg), "Current temperature = %d¢J\n", pChipCap->current_temp);
+	sprintf(msg+strlen(msg), "Current temperature = %dÂ¢J\n", pChipCap->current_temp);
 	sprintf(msg+strlen(msg), "Current thermal value = 0x%08X\n", pChipCap->temp_val);
     sprintf(msg+strlen(msg), "Tx success                      = %ld\n", txCount);
 #ifdef ENHANCED_STAT_DISPLAY
