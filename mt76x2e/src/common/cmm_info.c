@@ -4833,6 +4833,7 @@ INT Show_TxInfo_Proc(RTMP_ADAPTER *pAd, PSTRING arg)
 			printk("TX Retry(%7d), Tx Fail(%7d)\n", pEntry->StatTxRetryOkCount, pEntry->StatTxFailCount);
 		}
 	}
+	return 0;
 }
 #endif /* CONFIG_AP_SUPPORT */
 
