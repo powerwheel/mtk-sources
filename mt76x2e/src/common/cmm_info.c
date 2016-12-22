@@ -41,7 +41,7 @@ INT Set_DriverVersion_Proc(
 {
 #ifdef CONFIG_AP_SUPPORT
 	IF_DEV_CONFIG_OPMODE_ON_AP(pAd)
-		DBGPRINT(RT_DEBUG_OFF, ("Driver version-%s %s %s\n", AP_DRIVER_VERSION, __DATE__, __TIME__));
+		DBGPRINT(RT_DEBUG_OFF, ("Driver version-%s\n", AP_DRIVER_VERSION));
 #endif /* CONFIG_AP_SUPPORT */
 
 
