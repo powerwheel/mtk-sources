@@ -89,7 +89,7 @@
 #define EEPROM_DEFAULT_FILE_PATH                     "/etc_ro/wlan/RT2880_RT2820_AP_2T3R_V1_6.bin"
 #endif /* EEPROM_DEFAULT_FILE_PATH */
 
-#ifdef RTMP_FLASH_SUPPORT
+#if defined(RTMP_EFUSE_SUPPORT) && defined(RTMP_FLASH_SUPPORT)
 static USHORT EE_FLASH_ID_LIST[]={
 
 #ifdef RT6352
